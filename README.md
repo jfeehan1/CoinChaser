@@ -25,6 +25,17 @@ Set `J7_EXPORT_FILE` or `FOMO_EXPORT_FILE` to use a different local file. The pr
 
 Open `app/index.html` in a modern browser. Import permitted JSON exports or paste JSON directly to get a local, interactive research queue. The app processes data only in the browser; it makes no network requests, stores no credentials, connects to no wallet, and cannot execute a trade. Use **Export visible JSON** to save the filtered queue.
 
+### Publish a public GitHub Pages link
+
+This repository includes `.github/workflows/deploy-pages.yml`, which publishes the `app/` folder whenever changes are pushed to `main`.
+
+1. In the GitHub repository, choose **Settings** → **Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** and save.
+3. Commit and push the `.github` folder included in this download. GitHub will run **Deploy Signal Scout to GitHub Pages** under the repository's **Actions** tab.
+4. When the run completes, the Pages settings screen shows your live URL. It normally follows `https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY-NAME/`.
+
+The repository must be public unless your GitHub plan supports Pages for private repositories.
+
 ## Score model (0–100)
 
 The score prioritizes items worth researching soon: freshness (up to 30), liquidity (up to 50), activity relative to liquidity (up to 25), unique buyers (up to 25), and agreement among sources (12 each). It subtracts 20 for holder concentration above 20%, 20 for creator concentration above 10%, 15 for sniper concentration above 15%, and 100 for a honeypot/failed-sell indication. Values are clamped to 0–100.
