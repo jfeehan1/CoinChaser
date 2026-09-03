@@ -1,0 +1,40 @@
+[
+  {
+    "source": "j7",
+    "sourceSignalId": "paste-export-id-here",
+    "observedAt": "2026-09-03T14:20:00.000Z",
+    "chain": "solana",
+    "tokenAddress": "ReplaceWithVerifiedContractAddress",
+    "symbol": "EXAMPLE",
+    "liquidityUsd": 42000,
+    "volume1hUsd": 18000,
+    "marketCapUsd": 220000,
+    "ageMinutes": 24,
+    "uniqueBuyers1h": 87,
+    "topHolderPct": 12,
+    "creatorPct": 4,
+    "sniperPct": 7,
+    "isHoneypot": false,
+    "canSell": true,
+    "metadata": { "note": "Replace with a permitted J7 export or a manually verified observation." }
+  },
+  {
+    "source": "fomo",
+    "sourceSignalId": "paste-export-id-here",
+    "observedAt": "2026-09-03T14:21:00.000Z",
+    "chain": "solana",
+    "tokenAddress": "ReplaceWithVerifiedContractAddress",
+    "symbol": "EXAMPLE",
+    "liquidityUsd": 42000,
+    "volume1hUsd": 18000,
+    "marketCapUsd": 220000,
+    "ageMinutes": 25,
+    "uniqueBuyers1h": 87,
+    "topHolderPct": 12,
+    "creatorPct": 4,
+    "sniperPct": 7,
+    "isHoneypot": false,
+    "canSell": true,
+    "metadata": { "note": "Use only an authorized export or documented API response." }
+  }
+]
